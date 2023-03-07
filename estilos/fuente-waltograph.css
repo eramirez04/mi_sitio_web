@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+span{
+    font-family: 'waltograph';
+    font-size: 13em;
+    letter-spacing: 5px;
+    cursor: pointer;
+    
+    color: white;
+
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(29, 41, 150);
+}
+/* bebas-neue-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'waltograph';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/waltograph42.otf'), /* IE9 Compat Modes */
+     url('../fonts/waltographUI.ttf'); 
+}
