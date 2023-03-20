@@ -4,22 +4,26 @@
    margin-right: 30px;
    margin-bottom: 50px;
    margin-left: 30px;
-    width: 300px;
+    width: 200px;
    /*   padding-left: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 25px; */
     padding: 15px 45px;
+
+    /* text-align:letf=texto a la izquierda (alinear el texto)*/
     text-align: justify;
-    /* por defecto o */
+    /* por defecto 0, es el espacio entre las letras*/
     letter-spacing: .1em;
-    /* por defecto en 0 */
-    word-spacing: .2em;
-    /* poe defecto viene en 1.2em */
+    /* por defecto en 0, ea el espacio entre las palabras*/
+    word-spacing: .6em;
+    /* poe defecto viene en 1.2em  es el espacio entre las lineas*/
     line-height: 2em;
 }
+
 .box-1{
     border: 5px solid black;
+    text-indent: 2em;
 }
 .box-3{
     border: 5px dashed blue;
