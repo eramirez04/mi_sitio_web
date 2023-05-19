@@ -1,0 +1,121 @@
+.menu-style {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 10px  30px 10px 20px;
+    font-size: 1.5em;
+    list-style: none;
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-backgraund {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/01_gettyimages-1255975174.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+
+.main-nav {
+    width: 1200px;
+    height: 0px;
+
+
+}
+
+.logo-hamburguer {
+    display: none;
+}
+
+.img-logo {
+    display: inline-block;
+    width: 15%;
+}
+
+.main-menu {
+    text-align: left;
+    line-height: 50px;
+}
+
+.img-logo {
+    float: left;
+}
+
+.barra-nav {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.menu-style:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    color: antiquewhite;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1300px) {
+    .menu-style {
+        display: none;
+    }
+
+    .menu-style-block {
+        display: block;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    body {
+        background-image: url("../img/mq1.png");
+        background-size: cover;
+    }
+
+    .logo-hamburguer {
+        display: block;
+        font-size: 2.2em;
+        margin-top: 25px;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: rgb(24, 24, 24);
+
+    }
+
+    .logo-hamburguer:hover {
+        cursor: pointer;
+    }
+
+    .main-menu-block {
+        display: block;
+        background-color: rgb(64, 64, 64, .8);
+        margin-top: 85px;
+        padding-top: 3px;
+        font-size: 0.9em;
+    }
+
+    .menu-style {
+        display: block;
+        border-bottom: 3px solid rgb(220, 220, 220, .7);
+        color: aliceblue;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .menu-style:hover {
+        cursor: pointer;
+        background-color: rgb(198, 222, 222);
+        color: rgb(1, 1, 1);
+    }
+    
+}
