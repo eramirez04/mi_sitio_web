@@ -1,10 +1,10 @@
 .menu-style {
     display: inline-block;
     font-family: sans-serif;
-    padding: 10px  30px 10px 20px;
+    padding: 10px 30px 10px 20px;
     font-size: 1.5em;
     list-style: none;
-    
+
 
 }
 
@@ -56,11 +56,10 @@
     top: 0;
 }
 
-.menu-style:hover{
-    border-radius: 20px;
+.menu-style:hover {
     cursor: pointer;
     color: antiquewhite;
-    background-color: black;
+    border-bottom: 1px solid black;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -73,7 +72,14 @@
     }
 
     .main-menu {
-        display: none;
+        display: inline-block;
+        position: relative;
+        display: block;
+        right: 1300px;
+        background-color: rgb(64, 64, 64, .8);
+        margin-top: 85px;
+        padding-top: 3px;
+        font-size: 0.9em;
     }
 
     body {
@@ -102,6 +108,7 @@
         margin-top: 85px;
         padding-top: 3px;
         font-size: 0.9em;
+        position: relative;
     }
 
     .menu-style {
@@ -114,8 +121,8 @@
 
     .menu-style:hover {
         cursor: pointer;
-        background-color: rgb(198, 222, 222);
-        color: rgb(1, 1, 1);
+        background-color: rgb(235, 245, 245);
+        color: rgb(255, 255, 255);
     }
-    
+
 }
