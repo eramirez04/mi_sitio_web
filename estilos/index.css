@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
 }
-body{
-     background-color: #F0F2F5; 
+
+body {
+    background-color: #F0F2F5;
 
 }
 
@@ -14,43 +15,41 @@ body{
 
 .contenedor {
     display: flex;
+    justify-content: center;
+
+
 }
 
 .container {
     width: 90%;
     display: flex;
-    flex-direction: row;
     border-bottom: 1px solid rgb(124, 124, 124);
     background-color: white;
     border-radius: 2%;
+
 }
 
-#box1 {
-
+.box1-1 {
     width: 19.5em;
     height: 13em;
 }
 
-#box1 img {
+.box1-1 img {
     margin: 2em 9.5em;
     width: 10em;
     border-radius: 50%;
     cursor: pointer;
 }
 
-#box1 img:hover {
-
-    filter: grayscale(0%);
-}
-
-#box2 {
+.box2 {
     color: #000000;
     margin: 2.9em 6.3em;
     height: 8em;
     letter-spacing: 1px;
-   font-family: sans-serif;
-   font-family: 'Bebas Neue';
+    font-family: sans-serif;
+    font-family: 'Bebas Neue';
     border-bottom: 1px solid rgb(124, 124, 124);
+
 }
 
 .font-cinzel {
@@ -60,6 +59,7 @@ body{
 
 
 .btn2 {
+    position: relative;
     margin: 5px;
     cursor: pointer;
     padding: 9px 20px;
@@ -99,13 +99,20 @@ body{
     width: 100px;
     height: 100px;
 }
-.parra{
+
+.parra {
     padding: 40px 0 0 0;
 }
+
 .box {
     display: contents;
     height: 7em;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-hamburguer {
+    display: none;
 }
 
 /* inicio estilos del menu  */
@@ -113,6 +120,7 @@ body{
     position: relative;
     width: 16.5em;
     border-right: 2px solid black;
+
 }
 
 ul {
@@ -131,11 +139,73 @@ ul {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     font-weight: 600;
-   
+
 }
 
 
 
+
+@media only screen and (max-width: 1300px) {
+
+
+    .container {
+        position: relative;
+        border-bottom: 1px solid rgb(124, 124, 124);
+        background-color: white;
+        display: block;
+        border-radius: 2%;
+        left: 10px;
+        margin: 0;
+        padding: 0;
+        height: 30%;
+
+    }
+
+
+    .box {
+        display: inline-block;
+        position: relative;
+        left: 120px;
+        height: 80%;
+    }
+
+    .box1-1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box2 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 300px;
+        left: 90px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo-hamburguer {
+        display: block;
+        font-size: 2.2em;
+        margin-top: 25px;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: rgb(24, 24, 24);
+        z-index: 10;
+
+    }
+
+    .logo-hamburguer:hover {
+        cursor: pointer;
+    }
+
+    .font-cinzel {
+        display: none;
+    }
+}
 
 /* cinzel-regular - latin */
 @font-face {
