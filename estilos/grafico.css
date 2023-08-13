@@ -13,7 +13,7 @@
     height: 560px;
 }
 
-.barra{
+.barra {
     background-color: rgb(214, 212, 213);
     height: 540px;
     display: flex;
@@ -71,40 +71,38 @@
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 15px;
     cursor: pointer;
-    -webkit-box-shadow: 11px -2px 43px -10px rgba(0,0,0,0.75);
--moz-box-shadow: 11px -2px 43px -10px rgba(0,0,0,0.75);
-box-shadow: 11px -2px 43px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px -2px 43px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px -2px 43px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px -2px 43px -10px rgba(0, 0, 0, 0.75);
 }
 
 
-.color-cajas1{
+.color-cajas1 {
     color: rgb(255, 195, 1);
 }
-.color-cajas2{
-color:  rgb(0, 162, 238);
-}
-.color-cajas3{
-color: rgb(8, 88, 155);
-}
-.color-cajas4{
-color:  rgb(149, 212, 1);
-}
-.color-cajas5{
-color:  rgb(254, 80, 165);
+
+.color-cajas2 {
+    color: rgb(0, 162, 238);
 }
 
+.color-cajas3 {
+    color: rgb(8, 88, 155);
+}
 
+.color-cajas4 {
+    color: rgb(149, 212, 1);
+}
+
+.color-cajas5 {
+    color: rgb(254, 80, 165);
+}
 
 /* fin de los estilos de las cajas que contienen los años*/
-
-
-
 
 .box-1 {
     height: 50%;
     width: 100%;
     background-color: rgb(255, 195, 1);
-
 }
 
 .box-2 {

@@ -58,11 +58,9 @@ h1 {
     background-color: goldenrod;
     grid-column-start: 1;
     grid-column-end: 5;
-
 }
 .box-4-2{
     background-color: goldenrod;
     grid-row-start: 2;
     grid-row-end: 6;
-    
 }

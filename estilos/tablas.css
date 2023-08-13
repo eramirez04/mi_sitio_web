@@ -15,7 +15,6 @@ table{
 
  th, td{ 
      padding: 20px 15px; 
-     border-radius: 2px;
  }
  .table-box{
     display: flex;
@@ -64,8 +63,6 @@ justify-content: center;
 .col-4{
 background-color: #FF7717;   
 }/* fin de de la "CLASE="COL-" */
-
-
 
 table tr:nth-child(3) {
 	background-color: #EEEEF0;
