@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: rgb(230, 235,224);
     width: 100%;
     display: grid;
     grid-template: "empty-left      main-page     empty-right"
@@ -26,14 +27,15 @@ header {
 
 .logo {
     grid-area: logo;
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(237,104, 90);
     height: 120px;
 }
 
 .main-menu {
-    background-color: aqua;
+    background-color: rgb(155, 193, 188);
     grid-area: main-menu;
     height: 120px;
+    border-radius: 80px;
 }
 
 .main-content {
@@ -47,12 +49,8 @@ header {
 
 .main-img {
     grid-area: main-img;
-    background-color: rgb(35, 77, 160);
-}
-
-.main-img img {
-    height: 100%;
-    width: 100%;
+    background-color: rgb(92, 164, 169);
+    border-radius: 20px;
 }
 
 .style-text {
@@ -85,6 +83,12 @@ header {
 .img-article img {
     height: 100%;
     width: 100%;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.text-article{
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(85, 84, 84);
 }
 
 .text-article .style-article {
