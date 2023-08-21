@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template: "logo nav" 80px / 1fr 1fr;
+}
+
+.logo {
+    grid-area: logo;
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+.menu li {
+    margin: 20px;
+    list-style: none;
+    z-index: 5;
+}
+
+.menu li a {
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    border-bottom: 1px #333 solid;
+}
+
+
+.circle {
+    width: 1500px;
+    height: 1500px;
+    background-color: rgb(235, 169, 224);
+    border-radius: 750px;
+    position: fixed;
+    bottom: -740px;
+    right: -720px;
+    z-index: 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    gap: 25px;
+    z-index: 5;
+}
+
+img {
+    cursor: pointer;
+}
+
+.main-content {
+    display: grid;
+    gap: 100px;
+    margin-top: 80px;
+    grid-template: "e texto tarro empty" /5px 1fr 1fr 10px;
+}
+
+.text {
+    grid-area: texto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .text {
+    position: relative;
+    max-width: 600px;
+}
+
+.main-content .text h2 {
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.main-content .text h2 span {
+    color: #017133;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.main-content .text a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #017133;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.main-content .img-box {
+    grid-area: tarro;
+    z-index: 5;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.cajas {
+    position: absolute;
+    left: 30%;
+    display: flex;
+}
+
+.cajas li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.7s;
+}
+
+/* .cajas li:hover {
+    transform: translateY(-15px);
+} */
+
+@media only screen and (max-width: 1300px) {
+    .main-content {
+        display: inline-block;
+        z-index: 5;
+        padding-left: 4%;
+    }
+
+    .circle {
+        display: none;
+        z-index: 0;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .cajas {
+        background-color: #017133;
+    }
+}
