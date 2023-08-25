@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ header {
 .logo {
     grid-area: logo;
     position: relative;
-    top: 20px;
+    top: 30px;
     left: 80px;
 }
 
@@ -29,7 +31,6 @@ nav {
 .menu li {
     margin: 20px;
     list-style: none;
-    z-index: 5;
 }
 
 .menu li a {
@@ -40,22 +41,33 @@ nav {
 }
 
 .menu li a:hover {
-    border-bottom: 1px #333 solid;
+    border-bottom: 2px solid rgb(64, 64, 64);
 }
-
 
 .circle {
     width: 1500px;
     height: 1500px;
-    background-color: rgb(235, 169, 224);
     border-radius: 750px;
     position: fixed;
     bottom: -740px;
     right: -720px;
-    z-index: 0;
+}
+
+.main-circle-green{
+    background-color: rgb(1, 113, 51);
+}
+
+.main-circle-rose{
+    background-color: rgb(212, 104,135);
+
+}
+
+.main-circle-pink{
+    background-color: rgb(201, 76,164);
 }
 
 .social {
+    grid-area: social-media;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +77,31 @@ nav {
     position: fixed;
     right: 0;
     gap: 25px;
-    z-index: 5;
+    top: 0;
+    z-index: 0;
+}
+
+.ico ul li {
+    z-index: 90;
+    font-size: 3em;
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ico ul li .fa-facebook:hover {
+    color: rgb(23, 115, 234);
+
+}
+
+.ico ul li .fa-twitter:hover {
+    color: rgb(28, 150, 232);
+}
+
+.ico ul li .fa-instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
 img {
@@ -74,93 +110,76 @@ img {
 
 .main-content {
     display: grid;
-    gap: 100px;
-    margin-top: 80px;
-    grid-template: "e texto tarro empty" /5px 1fr 1fr 10px;
+    padding-top: 100px;
+    grid-template: "empty-left text empty-center producto-img social-media"/ 140px 5fr minmax(0, 300px) 4fr 80px;
 }
 
 .text {
-    grid-area: texto;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content .text {
-    position: relative;
-    max-width: 600px;
+    grid-area: text;
+    font-weight: 500;
+    color: rgb(96, 96.93);
+    font-family: 'Poppins', sans-serif;
+    ;
 }
 
 .main-content .text h2 {
-    color: #333;
     font-size: 4em;
-    line-height: 1.4em;
-    font-weight: 500;
+    line-height: 1.5em;
 }
 
 .main-content .text h2 span {
-    color: #017133;
-    font-size: 1.2em;
-    font-weight: 900;
-
+    color: rgb(1, 113, 51);
 }
 
-.main-content .text a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 20px;
-    background-color: #017133;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
-    letter-spacing: 1px;
+.text div {
+    height: 90px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.text div a {
+    padding: 10px 10px;
+    border-radius: 20px;
     text-decoration: none;
+    background-color: rgb(1, 113, 51);
+    color: #fff;
 }
 
-.main-content .img-box {
-    grid-area: tarro;
+.text p {
+    color: rgb(87, 87, 87);
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.img-box {
+    grid-area: producto-img;
     z-index: 5;
-    width: 600px;
     height: 600px;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
 }
 
-.cajas {
-    position: absolute;
-    left: 30%;
-    display: flex;
-}
-
-.cajas li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+ .img-box img {
     transition: 0.7s;
+    height: 100%;
 }
 
-/* .cajas li:hover {
-    transform: translateY(-15px);
-} */
+.img-box img:hover {
+    transform: translateX(-30px);
+} 
 
-@media only screen and (max-width: 1300px) {
-    .main-content {
-        display: inline-block;
-        z-index: 5;
-        padding-left: 4%;
-    }
+.imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
 
-    .circle {
-        display: none;
-        z-index: 0;
-    }
+.imagenes img {
+    transition: 0.8s;
+}
 
-    .social {
-        display: none;
-    }
+.imagenes img:hover {
+    transform: translateY(-60px);
 
-    .cajas {
-        background-color: #017133;
-    }
 }

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="icon/all.css">
 </head>
 
 <body>
@@ -27,35 +28,39 @@
             </ul>
         </nav>
     </header>
-
     <div class="main-content">
-        <div class="circle"></div>
-        <div class="social">
-            <img src="img/facebook.png" alt="">
-            <img src="img/twitter.png" alt="">
-            <img src="img/instagram.png" alt="">
-        </div>
-
+        <div class="circle main-circle-green" id="mainCircle"></div>
         <div class="text">
-            <h2>It's not justf coffee<br> It's <span>Starbucks</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore sequi, totam ut sed, animi
-                dolores in voluptatibus eum culpa excepturi minus mollitia, officiis laborum. Ab iste repellat harum
-                quo!</p>
-            <a href="#">learn more</a>
+            <h2>It's not justf coffee <br>
+                It's <span>Starbucks</span> </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus eum enim earum exercitationem
+                hic distinctio aperiam aliquam? Reiciendis ab architecto eligendi ut, nesciunt quaerat quod autem eos
+                inventore dolor at!</p>
+            <div>
+                <a href="#">Learn More</a>
+            </div>
         </div>
+
         <div class="img-box">
-            <img src="img/img1.png" class="star" alt="">
+            <img id="mainImg" src="img/img1.png" class="star" alt="">
         </div>
 
-
+        <div class="social">
+            <div class="ico">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <ul class="cajas">
-        <li><img src="img/thumb1.png" onclick="cambiarImg('img1.png')" alt=""></li>
-        <li><img src="img/thumb2.png" onclick="cambiarImg('img2.png')" alt=""></li>
-        <li><img src="img/thumb3.png" onclick="cambiarImg('img3.png')" alt=""></li>
-    </ul>
-       <script src="js/starbukcs.js"></script>  
+    <div class="imagenes">
+        <img id="iceGreen" src="img/thumb1.png" onclick="cambiarImg('img/img1.png')" alt="">
+        <img id="iceRose" src="img/thumb2.png" onclick="cambiarImg('img/img2.png')" alt="">
+        <img id="icePink" src="img/thumb3.png" onclick="cambiarImg('img/img3.png')" alt="">
+    </div>
+    <script src="js/starbukcs.js"></script>
 </body>
 
 </html>
