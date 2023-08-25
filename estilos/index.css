@@ -5,114 +5,19 @@
 
 body {
     background-color: #F0F2F5;
-
-}
-
-.menu-container {
-    display: inline-flex;
-    flex-wrap: wrap;
 }
 
 .contenedor {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template: "nav contenedor" 900px/ 1fr 7.4fr;
 }
 
-.container {
-    width: 90%;
-    display: flex;
-    border-bottom: 1px solid rgb(124, 124, 124);
-    background-color: white;
-    border-radius: 2%;
-}
-
-.box1-1 {
-    width: 19.5em;
-    height: 13em;
-}
-
-.box1-1 img {
-    margin: 2em 9.5em;
-    width: 10em;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.box2 {
-    color: #000000;
-    margin: 2.9em 6.3em;
-    height: 8em;
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-family: 'Bebas Neue';
-    border-bottom: 1px solid rgb(124, 124, 124);
-}
-
-.font-cinzel {
-    font-family: 'Cinzel';
-    text-align: center;
-}
-
-
-.btn2 {
-    position: relative;
-    margin: 5px;
-    cursor: pointer;
-    padding: 9px 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    display: flex;
-    text-align: center;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    transition: all 1s;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-.btn2:hover {
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 4px;
-    letter-spacing: 3px;
-}
-
-.btn2:hover {
-    background: #100f0e;
-    color: #03e9f4;
-}
-
-.btn2:after,
-.btn2:before {
-    content: " ";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    transition: all 1s;
-}
-
-.btn2:hover:before,
-.btn2:hover:after {
-    width: 100px;
-    height: 100px;
-}
-
-.parra {
-    padding: 40px 0 0 0;
-}
-
-.box {
-    display: contents;
-    height: 7em;
-    flex-wrap: wrap;
-    justify-content: center;
+.nav {
+    grid-area: nav;
+    border-right: 2px solid black;
 }
 
 /* inicio estilos del menu  */
-.nav {
-    position: relative;
-    width: 17.5em;
-    border-right: 2px solid black;
-}
 
 ul {
     text-align: center;
@@ -129,6 +34,89 @@ ul {
     cursor: pointer;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+}
+
+/* fin de los estilos del munu-nav */
+
+.menu-container {
+    grid-area: contenedor;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-radius: 2%;
+    width: 100%;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.box1-1 {
+    width: 200px;
+    height: 200px;
+}
+
+.box1-1 img {
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.box2 {
+    color: #000000;
+    height: 8em;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-family: 'Bebas Neue';
+    border-bottom: 1px solid rgb(124, 124, 124);
+}
+
+.font-cinzel {
+    font-family: 'Cinzel';
+    text-align: center;
+}
+
+.box {
+    grid-area: cajas;
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template: "empty caja-1 caja-2 caja-3 caja-4 caja-5 empty-final";
+}
+
+.box-1-1 {
+    grid-area: caja-1;
+}
+
+.btn2 {
+    position: relative;
+    cursor: pointer;
+    padding: 9px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+    text-decoration: none;
+    border-radius: 40%;
+}
+
+.btn2:hover {
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 4px;
+    letter-spacing: 3px;
+    background: #100f0e;
+    color: #03e9f4;
+}
+
+.parra {
+    padding: 40px 0 0 0;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -167,7 +155,7 @@ ul {
         display: none;
     }
 }
-   
+
 @font-face {
     font-display: swap;
     font-family: 'Cinzel';
