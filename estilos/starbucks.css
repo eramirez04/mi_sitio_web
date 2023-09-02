@@ -117,7 +117,7 @@ img {
 .text {
     grid-area: text;
     font-weight: 500;
-    color: rgb(96, 96.93);
+    color: rgb(96, 96,93);
     font-family: 'Poppins', sans-serif;
     ;
 }

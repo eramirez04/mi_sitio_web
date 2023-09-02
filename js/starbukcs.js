@@ -6,6 +6,7 @@ let iceGreen = document.getElementById("iceGreen");
 let iceRose  = document.getElementById("iceRose");
 let mainCircle  = document.getElementById("mainCircle")
 let mainImg = document.getElementById("mainImg")
+let icePink = document.getElementById("icePink")
 
 iceGreen.addEventListener("mouseover", function(){
     mainCircle.classList.add("main-circle-green")
