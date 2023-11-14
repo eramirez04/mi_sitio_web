@@ -28,12 +28,13 @@ let marcaProducto = document.createElement("label")
 infoProducto.appendChild(marcaProducto)
 let nodoMarcaPdto = document.createTextNode("Toyota")
 marcaProducto.appendChild(nodoMarcaPdto)
+marcaProducto.setAttribute("class","marca-producto")
 
 
 /* Modelo del producto */
  let modeloProducto = document.createElement("label")
 infoProducto.appendChild(modeloProducto)
-let nodoModeloPdto = document.createTextNode("supra mk 04")
+let nodoModeloPdto = document.createTextNode("Supra Mk 04")
 modeloProducto.appendChild(nodoModeloPdto)
 
 
@@ -44,9 +45,7 @@ let nodoprecioPdto = document.createTextNode("200.000.000")
 precioProducto.appendChild(nodoprecioPdto) 
 
 
-
 /* Año */
-
 let yearProducto = document.createElement("label")
 infoProducto.appendChild(yearProducto)
 let nodoyeatPdto = document.createTextNode("1999")
@@ -61,7 +60,6 @@ kmPdto.appendChild(nodoKmPdto)
 
 
 /* ciuidad del producto */
-
 let cityPdto = document.createElement("label")
 infoProducto.appendChild(cityPdto)
 let nodoCityPdto = document.createTextNode("Pitalito")
