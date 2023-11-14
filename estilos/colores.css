@@ -1,60 +1,60 @@
 .box-colores {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 body {
-    background: #83a4d4;
-    background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
-    background: linear-gradient(to right, #b6fbff, #83a4d4);
+  background: #83a4d4;
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
 }
 
 .box-color {
-    width: 250px;
-    height: 250px;
-    margin: 20px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 span {
-    color: white;
+  color: white;
 }
 
 .color-red {
-    background-color: red;
+  background-color: red;
 }
 
 .color-blue {
-    background-color: blue;
+  background-color: blue;
 }
 
 .color-yellow {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .color-255-0-0 {
-    background-color: rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
 }
 
 .color-154-54-54 {
-    background-color: rgb(154, 54, 54);
+  background-color: rgb(154, 54, 54);
 }
 
 .color-58-0-223 {
-    background-color: rgb(58, 0, 223);
+  background-color: rgb(58, 0, 223);
 }
 
 .color123 {
-    background-color: #0bdd3c;
+  background-color: #0bdd3c;
 }
 
 .color321 {
-    background-color: #cceb05;
+  background-color: #cceb05;
 }
 
 .color543 {
-    background-color: #eb1405;
+  background-color: #eb1405;
 }

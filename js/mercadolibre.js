@@ -1,63 +1,128 @@
-let boxProductos = document.getElementById("boxProductos");
+/* alert("Tienda de Automoviles") */
 
-let boxProducto = document.createElement("div");
-boxProductos.appendChild(boxProducto);
-boxProducto.setAttribute("class", "box-producto");
+class automovil {
+  constructor(marca, modelo, precio, year, kilometrajes, ciudad, imagen) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.precio = precio;
+    this.year = year;
+    this.kilometrajes = kilometrajes;
+    this.ciudad = ciudad;
+    this.imagen = imagen;
+  }
+}
 
-/* Contenedor que contiene la imagen */
-let boxImagen = document.createElement("div");
-boxProducto.appendChild(boxImagen);
-boxImagen.setAttribute("class", "box-imagen");
+/* Instanciando la clase automivil */
+let objAuto = new automovil(
+  "Toyota",
+  "Supra Mk04",
+  2000000,
+  1999,
+  12560,
+  "pitalito",
+  "img/supra.webp"
+);
 
-/* imagen creada */
-let imagenPro = document.createElement("img");
-boxImagen.appendChild(imagenPro);
-imagenPro.setAttribute("src", "img/supra.webp");
-imagenPro.setAttribute("class", "box-imagen");
+let objAuto2 = new automovil(
+  "nissan",
+  "gtr r35",
+  1400000,
+  2014,
+  5000,
+  "neiva",
+  "img/nissan.webp"
+);
 
-/* contenedor para la infomacion */
-let infoProducto = document.createElement("div");
-boxProducto.appendChild(infoProducto);
-infoProducto.setAttribute("class", "box-info-producto");
+let objAuto3 = new automovil(
+  "Nissan",
+  "Skiline GT-r34",
+  200000000,
+  2010,
+  9000,
+  "Ibague",
+  "img/nis1.webp"
+);
 
-/* marca de del producto */
-let marcaProducto = document.createElement("label");
-infoProducto.appendChild(marcaProducto);
-let nodoMarcaPdto = document.createTextNode("Toyota ");
-marcaProducto.appendChild(nodoMarcaPdto);
-marcaProducto.setAttribute("class", "marca-producto");
+/*  */
+/* let boxProductos = document.getElementById("boxProductos"); */
 
-/* Modelo del producto */
-let modeloProducto = document.createElement("label");
-infoProducto.appendChild(modeloProducto);
-let nodoModeloPdto = document.createTextNode("Supra Mk 04 ");
-modeloProducto.appendChild(nodoModeloPdto);
-modeloProducto.setAttribute("class", "modelo-producto");
+/*  */
+function cargarAuto(automoviles) {
+  let boxProducto = document.createElement("div");
+  boxProductos.appendChild(boxProducto);
+  boxProducto.setAttribute("class", "box-producto");
 
-/* precio del producto */
-let precioProducto = document.createElement("label");
-infoProducto.appendChild(precioProducto);
-let nodoprecioPdto = document.createTextNode("$200.000.000 ");
-precioProducto.appendChild(nodoprecioPdto);
-precioProducto.setAttribute("class", "precio-producto");
+  /* Contenedor que contiene la imagen */
+  let boxImagen = document.createElement("div");
+  boxProducto.appendChild(boxImagen);
+  boxImagen.setAttribute("class", "box-imagen");
 
-/* Año */
-let yearProducto = document.createElement("label");
-infoProducto.appendChild(yearProducto);
-let nodoyeatPdto = document.createTextNode(" 1999 ");
-yearProducto.appendChild(nodoyeatPdto);
-yearProducto.setAttribute("class", "anyo-producto")
+  /* imagen creada */
+  let imagenPro = document.createElement("img");
+  boxImagen.appendChild(imagenPro);
+  imagenPro.setAttribute("src", automoviles.imagen);
+  imagenPro.setAttribute("class", "box-imagen");
 
-/* Kilometraje */
-let kmPdto = document.createElement("label");
-infoProducto.appendChild(kmPdto);
-let nodoKmPdto = document.createTextNode("12654 Km");
-kmPdto.appendChild(nodoKmPdto);
-kmPdto.setAttribute("class", "kilometraje")
+  /* contenedor para la infomacion */
+  let infoProducto = document.createElement("div");
+  boxProducto.appendChild(infoProducto);
+  infoProducto.setAttribute("class", "box-info-producto");
 
-/* ciudad del producto */
-let cityPdto = document.createElement("label");
-infoProducto.appendChild(cityPdto);
-let nodoCityPdto = document.createTextNode("Pitalito");
-cityPdto.appendChild(nodoCityPdto);
-cityPdto.setAttribute("class", "ciudad")
+  /* marca de del producto */
+  let marcaProducto = document.createElement("label");
+  infoProducto.appendChild(marcaProducto);
+  let nodoMarcaPdto = document.createTextNode(automoviles.marca + " ");
+  marcaProducto.appendChild(nodoMarcaPdto);
+  marcaProducto.setAttribute("class", "marca-producto");
+
+  /* Modelo del producto */
+  let modeloProducto = document.createElement("label");
+  infoProducto.appendChild(modeloProducto);
+  let nodoModeloPdto = document.createTextNode(automoviles.modelo + " ");
+  modeloProducto.appendChild(nodoModeloPdto);
+  modeloProducto.setAttribute("class", "modelo-producto");
+
+  /* precio del producto */
+  let precioProducto = document.createElement("label");
+  infoProducto.appendChild(precioProducto);
+  let nodoprecioPdto = document.createTextNode(automoviles.precio + " ");
+  precioProducto.appendChild(nodoprecioPdto);
+  precioProducto.setAttribute("class", "precio-producto");
+
+  /* Año */
+  let yearProducto = document.createElement("label");
+  infoProducto.appendChild(yearProducto);
+  let nodoyeatPdto = document.createTextNode(automoviles.year + " · ");
+  yearProducto.appendChild(nodoyeatPdto);
+  yearProducto.setAttribute("class", "anyo-producto");
+
+  /* Kilometraje */
+  let kmPdto = document.createElement("label");
+  infoProducto.appendChild(kmPdto);
+  let nodoKmPdto = document.createTextNode(automoviles.kilometrajes + " ");
+  kmPdto.appendChild(nodoKmPdto);
+  kmPdto.setAttribute("class", "kilometraje");
+
+  /* ciudad del producto */
+  let cityPdto = document.createElement("label");
+  infoProducto.appendChild(cityPdto);
+  let nodoCityPdto = document.createTextNode(automoviles.ciudad);
+  cityPdto.appendChild(nodoCityPdto);
+  cityPdto.setAttribute("class", "ciudad");
+}
+
+
+cargarAuto(objAuto2);
+cargarAuto(objAuto3);
+
+
+
+let inputBusqueda = document.getElementById("inputBusqueda");
+
+
+window.addEventListener("keydown", (event) =>{
+    
+    if(event.key == "Enter"){
+
+    }
+});

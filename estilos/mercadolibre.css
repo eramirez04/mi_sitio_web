@@ -50,8 +50,10 @@
 
 .box-producto {
   width: 100%;
+  padding: 25px 0;
   display: grid;
   grid-template: "box-imagen box-info-producto" / 7fr 10fr;
+  border-bottom: 1px solid rgb(200, 200, 200, 0.5);
 }
 
 .box-imagen {
@@ -64,16 +66,10 @@
 
 .box-info-producto {
   grid-area: box-info-producto;
- /*  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; */
 }
 
 .marca-producto,
 .modelo-producto {
-  /*  font-family: "Bebas Neue"; */
-  /*  padding-top: 25px; */
-  /*  line-height: ; */
   font-size: 0.85em;
   font-weight: 400;
   line-height: 30px;
@@ -85,14 +81,13 @@
   font-weight: 500;
 }
 
-.anyo-producto, .kilometraje, .ciudad{
-  font-size: .7em;
+.anyo-producto,
+.kilometraje,
+.ciudad {
+  font-size: 0.7em;
   color: rgb(140, 140, 140);
+  font-size: 0.8em;
 }
-
-
-
-
 
 /* Fuentes */
 
