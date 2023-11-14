@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.box-header {
+    width: 100%;
+    display: grid;
+    grid-template: "logo input carrito hamburguer" / 60px 1fr 40px 40px;
+    background-color: rgb(255, 229, 0);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-logo {
+    grid-area: logo;
+}
+
+.box-logo img {
+    height: 50px;
+}
+
+.box-input-busqueda {
+    grid-area: input;
+}
+
+.input {
+    border: none;
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.box-carrito {
+    grid-area: carrito;
+}
+
+.box-hamburguer {
+    grid-area: hamburguer;
+}
+
+
+/* Estilos se agregan con javascript dinamicamente */
+
+
+.box-producto{
+    width: 100%;
+    display: grid;
+    grid-template: "box-imagen box-info-producto" / 7fr 10fr;
+}
+
+.box-imagen{
+    grid-area: box-imagen;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-info-producto{
+    grid-area: box-info-producto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   /*  align-items: center; */
+}
+
+.box-label{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: aqua;
+}
