@@ -32,8 +32,12 @@ ul {
 
 .icon-style:hover {
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(184, 47, 47);
     background-color: rgb(255, 255, 255);
+}
+
+.color-icon{
+   color: #62696a;
 }
 
 /* fin de los estilos del munu-nav */
@@ -57,14 +61,15 @@ ul {
 }
 
 .box1-1 {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 .box1-1 img {
     width: 100%;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
 }
 
 .box2 {
@@ -105,6 +110,7 @@ ul {
     transition: all 1s;
     text-decoration: none;
     border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .btn2:hover {

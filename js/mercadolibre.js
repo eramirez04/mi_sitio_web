@@ -1,5 +1,3 @@
-/* alert("Tienda de Automoviles") */
-
 class automovil {
   constructor(marca, modelo, precio, year, kilometrajes, ciudad, imagen) {
     this.marca = marca;
@@ -43,7 +41,6 @@ let objAuto3 = new automovil(
   "img/nis1.webp"
 );
 
-/*  */
 /* let boxProductos = document.getElementById("boxProductos"); */
 
 /*  */
@@ -111,18 +108,27 @@ function cargarAuto(automoviles) {
   cityPdto.setAttribute("class", "ciudad");
 }
 
+/* */
 
+let boxProductos = document.getElementById("boxProductos");
+cargarAuto(objAuto);
 cargarAuto(objAuto2);
 cargarAuto(objAuto3);
 
+window.addEventListener("keydown", (event) => {
+  let inputBusqueda = document.getElementById("inputBusqueda").value;
+  if (event.key == "Enter") {
+    boxProductos.innerHTML = "";
+    let inputBusquedaAux = inputBusqueda.toLowerCase();
 
-
-let inputBusqueda = document.getElementById("inputBusqueda");
-
-
-window.addEventListener("keydown", (event) =>{
-    
-    if(event.key == "Enter"){
-
+    if (inputBusquedaAux == "toyota") {
+      cargarAuto(objAuto);
+    } else if (inputBusquedaAux == "nissan") {
+      cargarAuto(objAuto2);
+      cargarAuto(objAuto3);
     }
+    else{
+      alert("no se encontro Auto")
+    }
+  }
 });
