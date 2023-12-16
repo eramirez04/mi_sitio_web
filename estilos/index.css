@@ -36,8 +36,8 @@ ul {
     background-color: rgb(255, 255, 255);
 }
 
-.color-icon{
-   color: #62696a;
+.color-icon {
+    color: #62696a;
 }
 
 /* fin de los estilos del munu-nav */
@@ -75,24 +75,30 @@ ul {
     color: #000000;
     height: 8em;
     letter-spacing: 1px;
-    font-family: sans-serif;
     font-family: 'Bebas Neue';
     border-bottom: 1px solid rgb(124, 124, 124);
 }
-.escritura{
+
+.escritura {
     font-size: 2em;
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
     width: 25ch;
-   animation: typing 5s steps(25), blink .9s infinite step-end alternate;
+    animation: typing 5s steps(25), blink .9s infinite step-end alternate;
     overflow: hidden;
 }
+
 @keyframes typing {
-    from {width: 0}
+    from {
+        width: 0
+    }
 }
+
 @keyframes blink {
-    50% {border-color: transparent}
+    50% {
+        border-color: transparent
+    }
 }
 
 .font-cinzel {
@@ -125,6 +131,7 @@ ul {
     text-decoration: none;
     border-radius: 40%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    width: 115px;
 }
 
 .btn2:hover {
@@ -136,39 +143,25 @@ ul {
 }
 
 .parra {
-    padding: 40px 0 0 0;
+    height: 20px;
+    width: 90px;
+
 }
 
 @media only screen and (max-width: 1024px) {
 
-    .container {
-        position: relative;
-        border-bottom: 1px solid rgb(124, 124, 124);
-        background-color: white;
-        display: block;
-        border-radius: 2%;
-        left: 10px;
-        height: 25%;
-    }
-
     .box {
-        display: inline-block;
-        position: relative;
-        left: 120px;
-        height: 80%;
+        display: grid;
+
     }
 
-    .box1-1 {
-        margin: 0;
-        padding: 0;
+    .main-box-2{
+        display: grid;
+        grid-template-columns: 1fr 150px 150px 1fr;
     }
 
-    .box2 {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        width: 300px;
-        left: 90px;
+    .escritura {
+        font-size: 2.3em;
     }
 
     .nav {
